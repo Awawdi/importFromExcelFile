@@ -24,6 +24,8 @@ protected void btnUpload_Click(object sender, EventArgs e)
     private void Import_To_Grid(string FilePath, string Extension)
     {
         string conStr = "";
+        
+        //verify file extension
         switch (Extension)
         {
             case ".xls": //Excel 97-03
